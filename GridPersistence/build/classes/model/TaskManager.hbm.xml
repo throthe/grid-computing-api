@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 9, 2018 3:15:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.TaskManager" table="task_manager" catalog="gridrepository" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="classFiles" class="model.ClassFiles" fetch="select">
+            <column name="task_manager_class_id" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="25" />
+        </property>
+        <set name="taskDefinitions" table="task_definition" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="task_manager_id" />
+            </key>
+            <one-to-many class="model.TaskDefinition" />
+        </set>
+        <set name="taskManagerClassFileses" table="task_manager_class_files" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="task_manager_id" />
+            </key>
+            <one-to-many class="model.TaskManagerClassFiles"  />
+        </set>
+    </class>
+</hibernate-mapping>

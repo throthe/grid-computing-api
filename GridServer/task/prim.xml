@@ -1,0 +1,14 @@
+<TaskDefinition>
+    <uniqueTaskName>Prim</uniqueTaskName>
+    <userTask>C:\Users\thomas_r\Documents\NetBeansProjects\GridServer\task\prim\PrimCheckTask.class</userTask>
+    <taskManager>C:\Users\thomas_r\Documents\NetBeansProjects\GridServer\task\prim\PrimCheckTaskManager.class</taskManager>
+    <taskManagerClasses>
+        <string>C:\Users\thomas_r\Documents\NetBeansProjects\GridServer\task\prim\PrimCheckResult.class</string>
+    </taskManagerClasses>
+    <userTaskClasses>
+        <string>C:\Users\thomas_r\Documents\NetBeansProjects\GridServer\task\prim\PrimCheckResult.class</string>
+        <string>C:\Users\thomas_r\Documents\NetBeansProjects\GridServer\task\prim\Interval.class</string>
+    </userTaskClasses>
+    <description>Prime number calculation</description>
+    <javaVersion class="util.JavaVersion">VERSION_1_8</javaVersion>
+</TaskDefinition>

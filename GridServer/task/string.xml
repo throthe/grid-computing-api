@@ -1,0 +1,7 @@
+<TaskDefinition>
+    <uniqueTaskName>StringCodierer</uniqueTaskName>
+    <userTask>C:\Users\thomas_r\Documents\NetBeansProjects\GridServer\task\string\StringCodingTask.class</userTask>
+    <taskManager>C:\Users\thomas_r\Documents\NetBeansProjects\GridServer\task\string\StringCodingTaskManager.class</taskManager>
+    <description>StringCodierung nach der Caesar-Chiffre um 1 Stelle.</description>
+    <javaVersion class="util.JavaVersion">VERSION_1_8</javaVersion>
+</TaskDefinition>
