@@ -1,0 +1,6 @@
+rootProject.name = 'grid-server'
+
+def interf = '../GridInterface'
+if (file(interf).exists()) {
+    includeBuild(interf)
+}
